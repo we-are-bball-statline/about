@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            /* This ensures there's no space around the <body> and <html> elements */
+        }
+
+        .own_headerrow {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4);
+            height: 60px;
+            margin-bottom: 0px;
+        }
+        .btn-navbar {
+            /* width: 50%; */
+            text-transform: uppercase;
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            background-color: #052d46;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #1a5276;
+            color: white;
+            border-color: #052d46 ;
+        }
+        .content-spacing {
+            padding-top: 100px; /* Adjust this value if needed */
+        }
+        .highlight-email {
+            color: #007bff; /* Bootstrap primary color */
+            font-weight: bold;
+            background-color: #f8f9fa; /* Light background for emphasis */
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .custom-list {
+            padding-left: 0;
+            list-style-type: none;
+            counter-reset: item; /* Initialize the counter */
+        }
+        .custom-list li {
+            position: relative; /* Set position relative for positioning the numbers */
+            margin-bottom: 5px;
+            background-color: #f8f9fa; /* Light background for emphasis */
+            padding: 5px 5px 5px 30px; /* Adjust left padding for spacing of the number */
+            border-radius: 5px;
+        }
+        .custom-list li:before {
+            content: counter(item) ". "; /* Increment the counter */
+            counter-increment: item;
+            position: absolute; /* Absolute position relative to the li */
+            left: 10px; /* Position the numbers inside the left padding area */
+            top: 5px; /* Align with the top of the list item */
+            color: #007bff; /* Bootstrap primary color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row fixed-top own_headerrow">
+            
+            
+                    <div class="col-6 d-flex justify-content-between align-items-center">
+                        <h1 class="site-title text-nowrap mb-0">BBALL-STATLINE</h1>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <!-- <button class="btn btn-navbar btn-primary" type="button">Try It</button> -->
+                        <a href="http://www.bball-statline.com" target="_blank" class="btn btn-navbar btn-primary" role="button">Try It</a>
+                    </div>
+        </div>
+    </div>
+    <div class="container my-5 content-spacing">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>We at BBALL-STATLINE have embarked on a mission to transform basketball statistics for sports journalists, BBall influencers, and basketball enthusiasts from the traditional table format into a visual, responsive, and interactive live experience – all at a glance!</p>
+                <p>Our project is rooted in:</p>
+                <ul class="custom-list">
+                    <li>Our love for basketball as NBA fans</li>
+                    <li>Our innovation-driven skills in the field of Data Science in the Master's program in Business Informatics</li>
+                    <li>The goal of developing a contemporary, modern approach to statistical information for the basketball fanbase</li>
+                </ul>
+                <!-- <p>1. Our love for basketball as NBA fans</p>
+                <p>2. Our innovation-driven skills in the field of Data Science in the Master's program in Business Informatics</p> -->
+                <p> </p>
+                <p>Since the founding of the NBA almost 80 years ago, game, player, and season statistics in tabular form have served as an international foundation for sports journalists and fans. Starting with the 2023/24 season, enthusiasts can look forward to a contemporary, innovative facelift and interactive visualizations for player facts and analyses.</p>
+                <p>At BBALL-STATLINE, we have developed a unique digital tool that, based on statistical values, provides an overview of the retrospective and current status of every player from the last 43 years (starting from the 1980 season) at a glance, and with a click, offers interactive connections and contextual analysis.</p>
+                <p>By integrating percentiles, our application allows users to quickly grasp distribution characteristics within a specific season, enabling informed decisions and uncovering hidden trends that are often obscured by previous, commonly accessible statistics.</p>
+                <p>With a focus on a streamlined user-centered design - coupled with relevant statistical information - we inspire the BBall community and also reach out to influencers and fans who follow the sport with less affinity for numbers.</p>
+                <p>Furthermore, our aim is to provide a basketball experience that allows the community to easily and intuitively grasp the intricacies of each player - linked with easily digestible season statistics.</p>
+                <p>Inspired by thought leaders like Ben Taylor from "Thinking Basketball" and motivated by the longstanding journalistic work of Dre Voigt ("Got Nexxt" magazine, podcaster, and more), Julius Schubert ("Just A Kid From Germany" on YouTube and more), and Jonathan Walker ("Jeden Tag NBA" podcast and more), we have launched an ambitious project over the past year with groundbreaking results. Currently, it is in the pilot phase as a desktop version and will be launched for the 2023/24 season.</p>
+                <p>Currently, we are working onexpanding the content of our platform to cover an even broader spectrum of datasets and visualizations, including game statistics.</p>
+                <p>BBALL-STATLINE aims to be a key player in the league of basketball statistics, and we look forward to our shared journey!</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <p>At BBALL-STATLINE, we value your input and welcome any questions, suggestions, or feedback you may have. Our team is dedicated to providing you with the best experience possible. For general inquiries, support with specific features, potential partnerships, or sharing your valuable insights, please don't hesitate to reach out to us at:</p>
+                <p class="highlight-email">bballstatline@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
